@@ -12,6 +12,8 @@
   <meta property="og:title" content="evrai — Applied AI for Healthcare Operations">
   <meta property="og:description" content="AI agents for DRG optimization, compliance readiness, chart review, claims follow-up, and clinical data quality.">
   <meta property="og:type" content="website">
+  <meta property="og:url" content="https://evrai.online/">
+  <link rel="canonical" href="https://evrai.online/">
   <meta name="theme-color" content="#0f172a">
   <script type="application/ld+json">
   {
@@ -106,6 +108,14 @@
     .products .card a { color: var(--teal-deep); font-weight: 700; text-decoration: none; }
     .products .card a:hover { text-decoration: underline; }
 
+    .demos .demo-card { display: flex; flex-direction: column; padding: 0; overflow: hidden; text-decoration: none; color: var(--ink); background: var(--surface-strong); transition: transform 0.15s ease; }
+    .demos .demo-card:hover { transform: translateY(-2px); }
+    .demos .demo-card img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; background: var(--navy); }
+    .demos .demo-card .body { padding: 20px 22px 22px; }
+    .demos .demo-card .watch { display: inline-block; margin-top: 10px; font-size: 0.88rem; font-weight: 700; color: var(--teal-deep); }
+    .demos .note { margin-top: 18px; font-size: 0.85rem; color: var(--muted); }
+    .demos .note a { color: var(--teal-deep); font-weight: 700; }
+
     .contact {
       background: var(--surface-dark); border-radius: 24px; color: #e6edf5;
       padding: 48px 40px; margin: 40px 0 0;
@@ -135,6 +145,7 @@
       <nav>
         <a href="#agents">Agents</a>
         <a href="#platform">Platform</a>
+        <a href="/demos/">Demos</a>
         <a href="#products">Products</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -198,6 +209,34 @@
         <h2>Grounded in the pipeline, not bolted on</h2>
         <p>Agents are only as good as the data underneath them. evrai runs on Health-Connect's interoperability core — HL7v2 and C-CDA ingestion, FHIR R4 storage, and conformance-scored transformation — so every finding traces back to source data with a quality score attached.</p>
       </div>
+    </section>
+
+    <section id="demos" class="demos">
+      <div class="section-head">
+        <h2>See it working</h2>
+        <p>Short narrated walkthroughs, each with captions, chapters and a transcript.</p>
+      </div>
+      <div class="grid">
+        <a class="card demo-card" href="/demos/cds-alert-effectiveness/">
+          <img src="/demos/cds-alert-effectiveness/player.jpg" alt="" width="1280" height="800" loading="lazy">
+          <div class="body">
+            <span class="tag">Alert effectiveness</span>
+            <h3>Are the alerts actually helping?</h3>
+            <p>Benchmark results next to live clinician feedback: aggregate only, with small cells suppressed.</p>
+            <span class="watch">Watch the demo →</span>
+          </div>
+        </a>
+        <a class="card demo-card" href="/demos/access-governance/">
+          <img src="/demos/access-governance/player.jpg" alt="" width="1280" height="800" loading="lazy">
+          <div class="body">
+            <span class="tag">Access governance</span>
+            <h3>Governance an auditor can verify</h3>
+            <p>Least-privilege roles, a value-free credential inventory, and a searchable PHI access log.</p>
+            <span class="watch">Watch the demo →</span>
+          </div>
+        </a>
+      </div>
+      <p class="note">Recorded on synthetic demo data with a synthetic narration voice, not a live customer deployment. <a href="/demos/">All demos</a></p>
     </section>
 
     <section id="products" class="products">

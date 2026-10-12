@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+  <url>
+    <loc>https://evrai.online/</loc>
+  </url>
+  <url>
+    <loc>https://evrai.online/demos/</loc>
+  </url>
+  <url>
+    <loc>https://evrai.online/demos/cds-alert-effectiveness/</loc>
+    <video:video>
+      <video:thumbnail_loc>https://evrai.online/demos/cds-alert-effectiveness/poster.jpg</video:thumbnail_loc>
+      <video:title>Are the alerts actually helping?</video:title>
+      <video:description>Narrated demo: an administrator view that pairs published benchmark results with live clinician feedback on decision-support alerts. It shows aggregate figures only, suppresses small cells, and gives admins control of each agent&#x27;s LLM transport.</video:description>
+      <video:content_loc>https://evrai.online/demos/cds-alert-effectiveness/cds-alert-effectiveness.mp4</video:content_loc>
+      <video:duration>173</video:duration>
+      <video:publication_date>2026-10-12T12:00:00+00:00</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://evrai.online/demos/access-governance/</loc>
+    <video:video>
+      <video:thumbnail_loc>https://evrai.online/demos/access-governance/poster.jpg</video:thumbnail_loc>
+      <video:title>Governance an auditor can verify.</video:title>
+      <video:description>Narrated demo: least-privilege role management with required reasons, a credential inventory that never shows secret values, and a searchable PHI access log where viewing the log is itself audited.</video:description>
+      <video:content_loc>https://evrai.online/demos/access-governance/access-governance.mp4</video:content_loc>
+      <video:duration>164</video:duration>
+      <video:publication_date>2026-10-12T12:00:00+00:00</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+  </url>
+</urlset>

@@ -1,0 +1,107 @@
+{
+  "site": "https://evrai.online",
+  "uploadDate": "2026-10-12",
+  "demos": [
+    {
+      "slug": "cds-alert-effectiveness",
+      "base": "effectiveness-batch-demo",
+      "eyebrow": "Alert effectiveness",
+      "title": "Are clinical decision support alerts helping? | evrai demo",
+      "h1": "Are the alerts actually helping?",
+      "card_title": "Alert effectiveness",
+      "card_blurb": "Benchmark results next to live clinician feedback: aggregate only, with small cells suppressed.",
+      "description": "Narrated demo: an administrator view that pairs published benchmark results with live clinician feedback on decision-support alerts. It shows aggregate figures only, suppresses small cells, and gives admins control of each agent's LLM transport.",
+      "intro": "Administrators need to know whether decision-support alerts earn their place in a clinician's day. This walkthrough shows the Effectiveness page. It pairs published benchmark results with live accept, dismiss and review feedback, reports acceptance with a confidence interval and the median time to review, and suppresses any cell too small to share. It then shows the admin-only runtime setting that picks realtime or batch LLM transport for each agent. A safety gate still keeps live PHI on realtime.",
+      "points": [
+        "Benchmark precision, recall and cost per case, each with a confidence interval",
+        "Every alert counted in exactly one outcome cell, including ones resolved in the EHR",
+        "Small-cell suppression: counts under 11 are masked and rates are withheld",
+        "Admin-only realtime or batch transport, with the safety gate's reason shown on the page"
+      ],
+      "chapters": {
+        "intro": "What the Effectiveness page answers",
+        "benchmark": "Benchmark results",
+        "partition": "Live feedback by outcome",
+        "rate": "Acceptance rate and review time",
+        "suppression": "Small-cell suppression",
+        "transport": "Realtime or batch LLM transport",
+        "flag": "Deployment batch flag",
+        "save": "Saving and the PHI safety gate",
+        "closing": "Configuration only, audited",
+        "disclosure": "About this recording"
+      },
+      "cta_subject": "Alert effectiveness walkthrough",
+      "disclosure": "This recording runs on a local demo stack. The benchmark results are aggregate figures from a public, de-identified research dataset (the MIMIC-IV Clinical Database Demo); all other data, including every patient, user, facility and alert count, is synthetic. It is not a live customer deployment and shows no protected health information. The narration is a synthetic, computer-generated voice.",
+      "published": true
+    },
+    {
+      "slug": "access-governance",
+      "base": "admin-governance-demo",
+      "eyebrow": "Access governance",
+      "title": "Role, credential and PHI access governance | evrai demo",
+      "h1": "Governance an auditor can verify.",
+      "card_title": "Access governance",
+      "card_blurb": "Least-privilege roles, a value-free credential inventory, and a searchable PHI access log.",
+      "description": "Narrated demo: least-privilege role management with required reasons, a credential inventory that never shows secret values, and a searchable PHI access log where viewing the log is itself audited.",
+      "intro": "Security and compliance reviewers want evidence, not assurances. This walkthrough covers four things. Staff roles are managed with server-enforced least privilege and a required reason for every change. A credential inventory lists what each service credential protects and who rotates it, without reading a single secret. Every PHI view is audited. And the PHI access log can be filtered and paged, and records its own use.",
+      "points": [
+        "Role and facility scoping enforced on the server, with every change audited with its reason",
+        "A credential inventory that shows names and metadata only, never secret values",
+        "PHI views recorded per synthetic patient, then found in the access log seconds later",
+        "Meta-audit: viewing the log is logged, without storing the search terms typed"
+      ],
+      "chapters": {
+        "roster": "Staff roster and roles",
+        "least-privilege": "Least privilege on the server",
+        "role-change": "Changing a role, with a reason",
+        "credentials": "Credential inventory",
+        "rotation": "Value-free rotation age",
+        "phi-view": "Every PHI view is audited",
+        "phi-search": "Searching the PHI access log",
+        "paging": "Paging and capped exports",
+        "meta-audit": "Viewing the log is logged",
+        "closing": "Governance an auditor can verify",
+        "disclosure": "About this recording"
+      },
+      "cta_subject": "Access governance walkthrough",
+      "extra_label": "Redacted.",
+      "extra_disclosure": "Credential names, parameter paths and service lists are blurred in this public recording. In the product, platform admins see them in full; secret values are never shown to anyone.",
+      "published": true
+    },
+    {
+      "slug": "ehr-write-back",
+      "base": "ehr-writeback-demo",
+      "eyebrow": "EHR write-back · sandbox only",
+      "title": "EHR write-back administration (sandbox) | evrai demo",
+      "h1": "Designed to deliver alerts into the EHR providers already use.",
+      "card_title": "EHR write-back (sandbox)",
+      "card_blurb": "Routing, pause controls and an audited needs-attention list for alerts written back to the EHR.",
+      "description": "Narrated demo of Health-Connect's EHR write-back administration against a vendor sandbox: per-connection settings, routing by recommendation class, pause controls, a needs-attention list and an audited hold release. Write-back is sandbox only and not live with any customer.",
+      "intro": "Providers work in their EHR, so alerts should reach them there. Health-Connect's EHR write-back is designed to deliver them into the EHR as cases, routed to the right provider or queue. It is built and tested against a vendor sandbox only, and is not live with any customer. This walkthrough covers the admin side: per-connection settings and routing by recommendation class, close-reason mapping, connection and global pause, the needs-attention list, an audited hold release, and the read-only write-back panel in the review workspace.",
+      "points": [
+        "One settings row per connection; production is not permitted and every change is audited",
+        "Routing by class: orders to a provider, care-team items and documentation to queues",
+        "Pause a connection, or all write-back, with held deliveries rather than failures",
+        "A needs-attention list and bundle timeline that show ids and states, never patient data"
+      ],
+      "chapters": {
+        "intro": "Meeting providers in their EHR",
+        "optional": "Health-Connect stays optional",
+        "settings": "Connection settings",
+        "routing": "Routing by recommendation class",
+        "close-reasons": "Mapping close reasons",
+        "pause": "Connection and global pause",
+        "attention": "Needs-attention list",
+        "bundle": "Bundle detail and timeline",
+        "release": "Audited hold release",
+        "panel": "Write-back panel in the review workspace",
+        "closing": "Built and sandbox only",
+        "disclosure": "About this recording"
+      },
+      "extra_disclosure": "EHR write-back is built and tested against a vendor sandbox only. It is not live with any customer, and production write-back is disabled.",
+      "cta_subject": "EHR write-back walkthrough",
+      "extra_label": "Sandbox only.",
+      "published": false
+    }
+  ]
+}

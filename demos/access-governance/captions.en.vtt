@@ -1,0 +1,145 @@
+WEBVTT
+
+roster-1
+00:00:07.900 --> 00:00:11.579
+Administrators manage staff
+accounts and roles in one place.
+
+roster-2
+00:00:11.579 --> 00:00:14.583
+The roster filters by role,
+facility, and status,
+
+roster-3
+00:00:14.583 --> 00:00:17.649
+and every change is audited
+with the reason given.
+
+least-privilege-1
+00:00:23.100 --> 00:00:26.986
+Each user holds one role, and most
+roles are scoped to a facility.
+
+least-privilege-2
+00:00:26.986 --> 00:00:29.459
+Least privilege is enforced on the server:
+
+least-privilege-3
+00:00:29.459 --> 00:00:32.050
+a facility admin can't
+grant the admin role,
+
+least-privilege-4
+00:00:32.050 --> 00:00:34.464
+and an auditor sees the roster read only.
+
+role-change-1
+00:00:42.200 --> 00:00:44.748
+Changing a role takes a required reason.
+
+role-change-2
+00:00:44.748 --> 00:00:46.468
+The change applies at once,
+
+role-change-3
+00:00:46.468 --> 00:00:50.035
+and the history records who
+changed what, when, and why.
+
+credentials-1
+00:00:57.700 --> 00:01:01.840
+The credential inventory lists every
+service-to-service credential:
+
+credentials-2
+00:01:01.840 --> 00:01:06.475
+what it protects, who consumes it, who
+rotates it, and the rotation target.
+
+credentials-3
+00:01:06.475 --> 00:01:08.515
+It shows names and metadata only.
+
+credentials-4
+00:01:08.515 --> 00:01:11.110
+No secret value is ever read or displayed.
+
+rotation-1
+00:01:14.350 --> 00:01:18.463
+Rotation age comes from value-free
+metadata written at deploy time.
+
+rotation-2
+00:01:18.463 --> 00:01:23.436
+This local stack has no deploy, so ages
+show as unknown instead of being guessed.
+
+phi-view-1
+00:01:28.950 --> 00:01:32.046
+Every access to protected
+health information is audited.
+
+phi-view-2
+00:01:32.046 --> 00:01:36.470
+Opening the alert inbox records a view
+for each synthetic patient on the screen.
+
+phi-search-1
+00:01:44.000 --> 00:01:49.303
+In the PHI access log, an admin filters
+by date, user, action, resource,
+
+phi-search-2
+00:01:49.303 --> 00:01:51.144
+or outcome, newest first.
+
+phi-search-3
+00:01:51.144 --> 00:01:54.458
+The views from a moment
+ago are already here.
+
+paging-1
+00:01:59.950 --> 00:02:03.437
+Results come 50 at a time,
+with an older-page cursor,
+
+paging-2
+00:02:03.437 --> 00:02:05.542
+so even a large log stays quick.
+
+paging-3
+00:02:05.542 --> 00:02:08.502
+Exports are capped, and
+they're recorded too.
+
+meta-audit-1
+00:02:16.000 --> 00:02:17.926
+Viewing the log is itself logged.
+
+meta-audit-2
+00:02:17.926 --> 00:02:20.728
+The audit row notes that
+a user filter was used,
+
+meta-audit-3
+00:02:20.728 --> 00:02:23.005
+never the email address that was typed.
+
+closing-1
+00:02:24.250 --> 00:02:29.391
+Least privilege, no secret values on
+screen, and every PHI access audited:
+
+closing-2
+00:02:29.391 --> 00:02:31.684
+governance an auditor can verify.
+
+disclosure-1
+00:02:32.900 --> 00:02:36.710
+A note on this recording: the
+narration uses a synthetic voice,
+
+disclosure-2
+00:02:36.710 --> 00:02:41.186
+and all data shown is synthetic demo
+data, not a live customer deployment.

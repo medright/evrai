@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/svg+xml" href="/logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/demos/demos.css">
+  <meta name="theme-color" content="#0f172a">
+  <title>Are clinical decision support alerts helping? | evrai demo</title>
+  <meta name="description" content="Narrated demo: an administrator view that pairs published benchmark results with live clinician feedback on decision-support alerts. It shows aggregate figures only, suppresses small cells, and gives admins control of each agent&#x27;s LLM transport.">
+  <link rel="canonical" href="https://evrai.online/demos/cds-alert-effectiveness/">
+  <meta property="og:type" content="video.other">
+  <meta property="og:title" content="Are the alerts actually helping?">
+  <meta property="og:description" content="Narrated demo: an administrator view that pairs published benchmark results with live clinician feedback on decision-support alerts. It shows aggregate figures only, suppresses small cells, and gives admins control of each agent&#x27;s LLM transport.">
+  <meta property="og:url" content="https://evrai.online/demos/cds-alert-effectiveness/">
+  <meta property="og:image" content="https://evrai.online/demos/cds-alert-effectiveness/poster.jpg">
+  <meta property="og:image:width" content="1280">
+  <meta property="og:image:height" content="720">
+  <meta property="og:video" content="https://evrai.online/demos/cds-alert-effectiveness/cds-alert-effectiveness.mp4">
+  <meta property="og:video:type" content="video/mp4">
+  <meta property="og:video:width" content="1280">
+  <meta property="og:video:height" content="800">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "Are the alerts actually helping?",
+  "description": "Narrated demo: an administrator view that pairs published benchmark results with live clinician feedback on decision-support alerts. It shows aggregate figures only, suppresses small cells, and gives admins control of each agent's LLM transport.",
+  "thumbnailUrl": [
+    "https://evrai.online/demos/cds-alert-effectiveness/poster.jpg"
+  ],
+  "uploadDate": "2026-10-12",
+  "duration": "PT2M53S",
+  "contentUrl": "https://evrai.online/demos/cds-alert-effectiveness/cds-alert-effectiveness.mp4",
+  "inLanguage": "en",
+  "publisher": {
+    "@type": "Organization",
+    "name": "evrai",
+    "url": "https://evrai.online/"
+  },
+  "hasPart": [
+    {
+      "@type": "Clip",
+      "name": "What the Effectiveness page answers",
+      "startOffset": 0,
+      "endOffset": 23,
+      "url": "https://evrai.online/demos/cds-alert-effectiveness/?t=0"
+    },
+    {
+      "@type": "Clip",
+      "name": "Benchmark results",
+      "startOffset": 23,
+      "endOffset": 41,
+      "url": "https://evrai.online/demos/cds-alert-effectiveness/?t=23"
+    },
+    {
+      "@type": "Clip",
+      "name": "Live feedback by outcome",
+      "startOffset": 41,
+      "endOffset": 61,
+      "url": "https://evrai.online/demos/cds-alert-effectiveness/?t=41"
+    },
+    {
+      "@type": "Clip",
+      "name": "Acceptance rate and review time",
+      "startOffset": 61,
+      "endOffset": 79,
+      "url": "https://evrai.online/demos/cds-alert-effectiveness/?t=61"
+    },
+    {
+      "@type": "Clip",
+      "name": "Small-cell suppression",
+      "startOffset": 79,
+      "endOffset": 98,
+      "url": "https://evrai.online/demos/cds-alert-effectiveness/?t=79"
+    },
+    {
+      "@type": "Clip",
+      "name": "Realtime or batch LLM transport",
+      "startOffset": 98,
+      "endOffset": 111,
+      "url": "https://evrai.online/demos/cds-alert-effectiveness/?t=98"
+    },
+    {
+      "@type": "Clip",
+      "name": "Deployment batch flag",
+      "startOffset": 111,
+      "endOffset": 130,
+      "url": "https://evrai.online/demos/cds-alert-effectiveness/?t=111"
+    },
+    {
+      "@type": "Clip",
+      "name": "Saving and the PHI safety gate",
+      "startOffset": 130,
+      "endOffset": 147,
+      "url": "https://evrai.online/demos/cds-alert-effectiveness/?t=130"
+    },
+    {
+      "@type": "Clip",
+      "name": "Configuration only, audited",
+      "startOffset": 147,
+      "endOffset": 156,
+      "url": "https://evrai.online/demos/cds-alert-effectiveness/?t=147"
+    },
+    {
+      "@type": "Clip",
+      "name": "About this recording",
+      "startOffset": 156,
+      "endOffset": 173,
+      "url": "https://evrai.online/demos/cds-alert-effectiveness/?t=156"
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <a class="brand" href="/">
+        <img src="/logo.svg" alt="evrai logo" width="36" height="36">
+        <span>
+          <span class="kicker">evermed research</span>
+          <span class="name">evr<em>ai</em></span>
+        </span>
+      </a>
+      <nav aria-label="Primary">
+        <a href="/#agents">Agents</a>
+        <a href="/demos/">Demos</a>
+        <a href="/#products">Products</a>
+        <a href="/#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <p class="crumbs"><a href="/">Home</a> / <a href="/demos/">Demos</a> / Alert effectiveness</p>
+      <div class="watch-head">
+        <span class="eyebrow">Alert effectiveness</span>
+        <h1>Are the alerts actually helping?</h1>
+        <p class="lede">Administrators need to know whether decision-support alerts earn their place in a clinician&#x27;s day. This walkthrough shows the Effectiveness page. It pairs published benchmark results with live accept, dismiss and review feedback, reports acceptance with a confidence interval and the median time to review, and suppresses any cell too small to share. It then shows the admin-only runtime setting that picks realtime or batch LLM transport for each agent. A safety gate still keeps live PHI on realtime.</p>
+      </div>
+
+      <div class="player">
+        <video id="demo-video" controls preload="metadata" playsinline poster="player.jpg" width="1280" height="800">
+          <source src="cds-alert-effectiveness.mp4" type="video/mp4">
+          <track kind="captions" src="captions.en.vtt" srclang="en" label="English" default>
+          Your browser can't play this video. <a href="cds-alert-effectiveness.mp4">Download the MP4</a>.
+        </video>
+        <p class="meta">Narrated walkthrough · 2:53 · English captions · synthetic demo data</p>
+      </div>
+
+      <aside class="disclosure" aria-label="About this recording">
+        <p><strong>Demo data.</strong> This recording runs on a local demo stack. The benchmark results are aggregate figures from a public, de-identified research dataset (the MIMIC-IV Clinical Database Demo); all other data, including every patient, user, facility and alert count, is synthetic. It is not a live customer deployment and shows no protected health information. The narration is a synthetic, computer-generated voice.</p>
+      </aside>
+
+      <div class="watch-grid">
+        <section class="card" aria-labelledby="see">
+          <h2 id="see">What you'll see</h2>
+          <ul class="points">
+          <li>Benchmark precision, recall and cost per case, each with a confidence interval</li>
+          <li>Every alert counted in exactly one outcome cell, including ones resolved in the EHR</li>
+          <li>Small-cell suppression: counts under 11 are masked and rates are withheld</li>
+          <li>Admin-only realtime or batch transport, with the safety gate&#x27;s reason shown on the page</li>
+          </ul>
+        </section>
+        <section class="card" aria-labelledby="chapters">
+          <h2 id="chapters">Chapters</h2>
+          <ol class="chapters">
+          <li><a href="?t=0" data-t="0"><span class="ts">0:00</span> What the Effectiveness page answers</a></li>
+          <li><a href="?t=23" data-t="23"><span class="ts">0:23</span> Benchmark results</a></li>
+          <li><a href="?t=41" data-t="41"><span class="ts">0:41</span> Live feedback by outcome</a></li>
+          <li><a href="?t=61" data-t="61"><span class="ts">1:01</span> Acceptance rate and review time</a></li>
+          <li><a href="?t=79" data-t="79"><span class="ts">1:19</span> Small-cell suppression</a></li>
+          <li><a href="?t=98" data-t="98"><span class="ts">1:38</span> Realtime or batch LLM transport</a></li>
+          <li><a href="?t=111" data-t="111"><span class="ts">1:51</span> Deployment batch flag</a></li>
+          <li><a href="?t=130" data-t="130"><span class="ts">2:10</span> Saving and the PHI safety gate</a></li>
+          <li><a href="?t=147" data-t="147"><span class="ts">2:27</span> Configuration only, audited</a></li>
+          <li><a href="?t=156" data-t="156"><span class="ts">2:36</span> About this recording</a></li>
+          </ol>
+        </section>
+      </div>
+
+      <section class="card transcript" aria-labelledby="transcript">
+        <h2 id="transcript">Transcript</h2>
+        <p><a class="ts" href="?t=4" data-t="4">0:04</a> The Effectiveness page answers one question for administrators: are the CDS alerts actually helping? It pairs published benchmark results with live clinician feedback, and it shows aggregate figures only. No patient, case, or free text ever appears here.</p>
+        <p><a class="ts" href="?t=23" data-t="23">0:23</a> Benchmark results come from published evaluation cards: care-gap precision with and without the pre-publish gate and recall, each with its confidence interval, plus cost per case.</p>
+        <p><a class="ts" href="?t=41" data-t="41">0:41</a> Live feedback is filtered here to one synthetic demo facility. Every alert lands in exactly one cell: accepted, dismissed, reviewed, pending, expired, or resolved in EHR, which counts alerts the EHR closed before any clinician decided.</p>
+        <p><a class="ts" href="?t=61" data-t="61">1:01</a> When a group is large enough, you get the acceptance rate with a 95% confidence interval, plus the median time to review. Here, 46 of 67 decided alerts were accepted, about 69%, with a median review time of 1.3 hours.</p>
+        <p><a class="ts" href="?t=79" data-t="79">1:19</a> Small cells are suppressed. Any count from 1 to 10 shows as less than 11, a total that would give a hidden count away is masked, and the rate is withheld so the small count can&#x27;t be worked out.</p>
+        <p><a class="ts" href="?t=98" data-t="98">1:38</a> Runtime settings are admin only. Each agent&#x27;s LLM transport is realtime or batch. Batch costs about half as much and applies to scheduled runs only, and every agent shows the transport actually in effect.</p>
+        <p><a class="ts" href="?t=111" data-t="111">1:51</a> On this local demo stack the deployment&#x27;s batch flag is on, so batch can be chosen. Where the flag is off, the option is disabled and the server refuses a batch save.</p>
+        <p><a class="ts" href="?t=130" data-t="130">2:10</a> Saving stores the choice and pushes it to the agents service. The safety gate still decides: live PHI stays on realtime until the batch retention safeguards are in place and the routing policy approves batch, and the page says exactly why.</p>
+        <p><a class="ts" href="?t=147" data-t="147">2:27</a> Saving changes configuration only. It doesn&#x27;t start an agent run, and the stored setting records which admin made the change.</p>
+        <p><a class="ts" href="?t=156" data-t="156">2:36</a> A note on this recording: the narration uses a synthetic voice. The benchmark results are aggregate figures from a public, de-identified research dataset, and all other data shown is synthetic demo data, not a live customer deployment.</p>
+      </section>
+
+      <section class="contact">
+        <h2>Want to see this on your workflow?</h2>
+        <p>We run walkthroughs against realistic synthetic populations that match your case mix.</p>
+        <a class="btn btn-primary" data-cta href="mailto:evr@evrai.online?subject=Alert%20effectiveness%20walkthrough">Request a walkthrough</a>
+      </section>
+
+      <section aria-labelledby="more">
+        <h2 id="more" class="more-head">More demos</h2>
+        <div class="related-grid">
+        <a class="related" href="/demos/access-governance/"><span class="tag">Access governance</span><strong>Access governance</strong><span>Least-privilege roles, a value-free credential inventory, and a searchable PHI access log.</span></a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>© 2026 · evrai</span>
+      <span><a href="https://www.evermedresearch.org/privacy.html">Privacy</a></span>
+    </footer>
+  </div>
+  <script>
+  (function () {
+    var video = document.getElementById('demo-video');
+    var params = new URLSearchParams(window.location.search);
+    function seek(t, play) {
+      if (!video || !(t >= 0)) return;
+      var apply = function () { video.currentTime = t; if (play) video.play().catch(function () {}); };
+      if (video.readyState >= 1) apply(); else video.addEventListener('loadedmetadata', apply, { once: true });
+    }
+    var start = parseFloat(params.get('t'));
+    if (start >= 0) { seek(start, false); }
+    document.querySelectorAll('[data-t]').forEach(function (el) {
+      el.addEventListener('click', function (event) {
+        event.preventDefault();
+        seek(parseFloat(el.getAttribute('data-t')), true);
+        if (video) video.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      });
+    });
+    var utm = [];
+    params.forEach(function (value, key) { if (/^utm_[a-z]+$/.test(key)) utm.push(key + '=' + value); });
+    if (utm.length) {
+      document.querySelectorAll('a[data-cta]').forEach(function (a) {
+        a.href += '&body=' + encodeURIComponent('\n\n(' + window.location.pathname + ' ' + utm.join(' ') + ')');
+      });
+    }
+  })();
+  </script>
+</body>
+</html>
