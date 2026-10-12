@@ -1,0 +1,187 @@
+WEBVTT
+
+intro-1
+00:00:04.350 --> 00:00:05.994
+Providers work in their EHR.
+
+intro-2
+00:00:05.994 --> 00:00:09.577
+Health-Connect's EHR write-back
+is designed to deliver alerts
+
+intro-3
+00:00:09.577 --> 00:00:10.986
+into the provider's EHR.
+
+intro-4
+00:00:10.986 --> 00:00:13.101
+It is built, and it is sandbox only.
+
+intro-5
+00:00:13.101 --> 00:00:15.215
+It isn't live with any customer yet.
+
+optional-1
+00:00:16.350 --> 00:00:18.504
+Health-Connect itself stays optional:
+
+optional-2
+00:00:18.504 --> 00:00:23.103
+a place to dig into the data behind an
+alert, or to work a prior authorization.
+
+settings-1
+00:00:25.550 --> 00:00:28.769
+Each connection has one
+settings row, badged Sandbox.
+
+settings-2
+00:00:28.769 --> 00:00:33.688
+This synthetic athena sandbox connection
+is disabled, production isn't permitted,
+
+settings-3
+00:00:33.688 --> 00:00:35.753
+and every saved change is audited.
+
+routing-1
+00:00:42.050 --> 00:00:44.515
+Routing works by recommendation class.
+
+routing-2
+00:00:44.515 --> 00:00:48.083
+Orders go to a provider,
+care-team items go to a queue,
+
+routing-3
+00:00:48.083 --> 00:00:51.392
+and documentation goes to
+the CDI department queue.
+
+close-reasons-1
+00:00:54.900 --> 00:00:59.398
+Close reason ids map Health-Connect
+outcomes, dismissed, expired,
+
+close-reasons-2
+00:00:59.398 --> 00:01:02.651
+or superseded, to the
+EHR's own action reasons,
+
+close-reasons-3
+00:01:02.651 --> 00:01:05.904
+so a sandbox case closes
+with the right reason.
+
+pause-1
+00:01:13.450 --> 00:01:15.986
+Any connection can be
+paused with a reason,
+
+pause-2
+00:01:15.986 --> 00:01:18.344
+and a global pause stops all write-back.
+
+pause-3
+00:01:18.344 --> 00:01:20.703
+Pending deliveries are held, not failed.
+
+attention-1
+00:01:29.200 --> 00:01:34.282
+The needs-attention list shows only the
+bundles an admin has to look at, with ids,
+
+attention-2
+00:01:34.282 --> 00:01:36.637
+states, and codes, never patient data.
+
+attention-3
+00:01:36.637 --> 00:01:39.798
+This seeded sandbox bundle
+carries fixture history:
+
+attention-4
+00:01:39.798 --> 00:01:42.524
+its case was created in
+the sandbox earlier,
+
+attention-5
+00:01:42.524 --> 00:01:45.685
+and it's now held after too
+many delivery attempts.
+
+bundle-1
+00:01:48.700 --> 00:01:52.181
+The bundle page explains why
+it's held, lists its items,
+
+bundle-2
+00:01:52.181 --> 00:01:53.922
+and keeps an event timeline.
+
+bundle-3
+00:01:53.922 --> 00:01:56.719
+Admin actions never send
+anything themselves.
+
+bundle-4
+00:01:56.719 --> 00:01:58.708
+The dispatcher does all sending.
+
+release-1
+00:02:03.300 --> 00:02:06.586
+Releasing the hold is audited
+and lands on the timeline.
+
+release-2
+00:02:06.586 --> 00:02:08.874
+On this local stack no dispatcher runs,
+
+release-3
+00:02:08.874 --> 00:02:11.632
+so nothing new is sent
+and no vendor is called.
+
+panel-1
+00:02:16.900 --> 00:02:21.597
+In the review workspace, the alert
+carries a read-only EHR write-back panel,
+
+panel-2
+00:02:21.597 --> 00:02:25.738
+badged Sandbox: the case number,
+the route, and the delivery state.
+
+panel-3
+00:02:25.738 --> 00:02:28.519
+That delivery is seeded
+sandbox fixture data,
+
+panel-4
+00:02:28.519 --> 00:02:31.177
+and nothing on this
+stack reached a vendor.
+
+closing-1
+00:02:32.500 --> 00:02:34.940
+EHR write-back is built and sandbox only,
+
+closing-2
+00:02:34.940 --> 00:02:38.214
+designed to meet providers
+in the EHR they already use,
+
+closing-3
+00:02:38.214 --> 00:02:42.261
+with Health-Connect there for deeper
+review and prior authorization.
+
+disclosure-1
+00:02:43.500 --> 00:02:47.310
+A note on this recording: the
+narration uses a synthetic voice,
+
+disclosure-2
+00:02:47.310 --> 00:02:51.786
+and all data shown is synthetic demo
+data, not a live customer deployment.

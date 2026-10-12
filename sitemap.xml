@@ -31,4 +31,16 @@
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
   </url>
+  <url>
+    <loc>https://evrai.online/demos/ehr-write-back/</loc>
+    <video:video>
+      <video:thumbnail_loc>https://evrai.online/demos/ehr-write-back/poster.jpg</video:thumbnail_loc>
+      <video:title>Designed to deliver alerts into the EHR providers already use.</video:title>
+      <video:description>Narrated demo of Health-Connect&#x27;s EHR write-back administration against a vendor sandbox: per-connection settings, routing by recommendation class, pause controls, a needs-attention list and an audited hold release. Write-back is sandbox only and not live with any customer.</video:description>
+      <video:content_loc>https://evrai.online/demos/ehr-write-back/ehr-write-back.mp4</video:content_loc>
+      <video:duration>176</video:duration>
+      <video:publication_date>2026-10-12T12:00:00+00:00</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+  </url>
 </urlset>

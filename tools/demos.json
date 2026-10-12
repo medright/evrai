@@ -101,7 +101,7 @@
       "extra_disclosure": "EHR write-back is built and tested against a vendor sandbox only. It is not live with any customer, and production write-back is disabled.",
       "cta_subject": "EHR write-back walkthrough",
       "extra_label": "Sandbox only.",
-      "published": false
+      "published": true
     }
   ]
 }
